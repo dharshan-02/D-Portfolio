@@ -2233,6 +2233,7 @@ textarea:focus-visible {
   }
 
   .projects-grid {
+    grid-template-columns: none;
     grid-auto-flow: column;
     grid-auto-columns: min(400px, 85vw);
     overflow-x: auto;
@@ -2408,6 +2409,7 @@ textarea:focus-visible {
   }
 
   .cert-grid {
+    grid-template-columns: none;
     grid-auto-flow: column;
     grid-auto-columns: 85vw;
     overflow-x: auto;
