@@ -1,11 +1,9 @@
 import type { CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { Network } from 'lucide-react';
 import { faAws, faJava } from '@fortawesome/free-brands-svg-icons';
 import {
   siC,
   siCplusplus,
-  siCisco,
   siDocker,
   siExpress,
   siGithub,
@@ -52,7 +50,6 @@ const logos: Record<string, SimpleIcon> = {
   linux: siLinux,
   postman: siPostman,
   github: siGithub,
-  cisco: siCisco,
   selenium: siSelenium,
 };
 
@@ -79,9 +76,7 @@ const brandColors: Record<string, string> = {
   linux: '#FCC624',
   postman: '#FF6C37',
   github: 'var(--text-strong)',
-  cisco: '#049FD9',
   selenium: '#43B02A',
-  network: '#8BC2F4',
 };
 
 function SkillLogo({ icon, mark }: { icon: string; mark: string }) {
@@ -110,7 +105,6 @@ function SkillLogo({ icon, mark }: { icon: string; mark: string }) {
     );
   }
 
-  if (icon === 'network') return <Network className="skill-card__logo" aria-hidden="true" />;
   return <span className="skill-card__wordmark">{mark}</span>;
 }
 
