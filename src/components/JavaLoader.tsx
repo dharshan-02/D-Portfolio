@@ -49,17 +49,19 @@ export function JavaLoader() {
               <i>public class</i> Portfolio {'{'}
             </span>
             <span>
-              <b>02</b> <i>public static void</i> main(String[] args) {'{'}
+              <b>02</b>   <i>public static void</i> main(String[] args) {'{'}
             </span>
             <span>
-              <b>03</b> System.out.println(<em>"Hello, world!"</em>);
+              <b>03</b>     <i>boolean</i> isPortfolioLoading = <i>true</i>;
             </span>
             <span>
-              <b>04</b> {'}'}
+              <b>04</b>     System.out.println(isPortfolioLoading ? <em>"YES"</em> : <em>"NO"</em>);
             </span>
             <span>
-              <b>05</b>
-              {'}'}
+              <b>05</b>   {'}'}
+            </span>
+            <span>
+              <b>06</b> {'}'}
             </span>
           </pre>
         </div>
