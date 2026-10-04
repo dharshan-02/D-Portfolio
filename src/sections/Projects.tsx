@@ -4,7 +4,6 @@ import type { Project } from '../data/portfolio';
 import { portfolio } from '../data/portfolio';
 import { Reveal } from '../components/Reveal';
 import { SectionHeading } from '../components/SectionHeading';
-import { ProjectVisual } from '../components/ProjectVisual';
 
 const ProjectDialog = lazy(() =>
   import('../components/ProjectDialog').then((module) => ({ default: module.ProjectDialog })),

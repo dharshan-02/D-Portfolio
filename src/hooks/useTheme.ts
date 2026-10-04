@@ -8,10 +8,6 @@ function getStoredTheme(): Theme | null {
   return stored === 'dark' || stored === 'light' ? stored : null;
 }
 
-function getSystemTheme(): Theme {
-  return 'light'; // Forced light mode by default
-}
-
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(
     () => getStoredTheme() ?? 'light'
