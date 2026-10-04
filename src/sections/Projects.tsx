@@ -5,6 +5,8 @@ import { portfolio } from '../data/portfolio';
 import { Reveal } from '../components/Reveal';
 import { SectionHeading } from '../components/SectionHeading';
 
+import { useDraggableScroll } from '../hooks/useDraggableScroll';
+
 const ProjectDialog = lazy(() =>
   import('../components/ProjectDialog').then((module) => ({ default: module.ProjectDialog })),
 );
@@ -45,6 +47,7 @@ function ProjectLink({ project, type }: { project: Project; type: 'live' | 'gith
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const dragProps = useDraggableScroll<HTMLDivElement>();
 
   return (
     <section
@@ -58,7 +61,7 @@ export function Projects() {
         note={portfolio.sections.projects.note}
         titleId="work-title"
       />
-      <div className="projects-grid">
+      <div className="projects-grid" {...dragProps}>
         {portfolio.projects.map((project, index) => (
           <Reveal className="project-card-reveal" key={project.id} delay={index * 0.08}>
             <article className="project-card">

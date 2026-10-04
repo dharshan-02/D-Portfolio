@@ -4,12 +4,16 @@ import { portfolio } from '../data/portfolio';
 import { Reveal } from '../components/Reveal';
 import { SectionHeading } from '../components/SectionHeading';
 
+import { useDraggableScroll } from '../hooks/useDraggableScroll';
+
 const certificationLogos: Record<'sap' | 'cisco', SimpleIcon> = {
   sap: siSap,
   cisco: siCisco,
 };
 
 export function Certifications() {
+  const dragProps = useDraggableScroll<HTMLDivElement>();
+
   return (
     <section
       className="section section-wrap certifications-section"
@@ -23,7 +27,7 @@ export function Certifications() {
         titleId="certifications-title"
       />
 
-      <div className="cert-grid">
+      <div className="cert-grid" {...dragProps}>
         {portfolio.certifications.map((cert, index) => {
           const logo = cert.brand === 'oracle' ? undefined : certificationLogos[cert.brand];
           return (
