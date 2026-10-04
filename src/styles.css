@@ -2050,9 +2050,10 @@ textarea:focus-visible {
 
 .scroll-hint {
   display: none;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
+  margin-top: 20px;
+  margin-bottom: 0;
   animation: pulse-hint 2.5s infinite ease-in-out;
 }
 

@@ -61,9 +61,6 @@ export function Projects() {
         note={portfolio.sections.projects.note}
         titleId="work-title"
       />
-      <div className="scroll-hint" aria-hidden="true">
-        <span>← Swipe to explore →</span>
-      </div>
       <div className="projects-grid" {...dragProps}>
         {portfolio.projects.map((project, index) => (
           <Reveal className="project-card-reveal" key={project.id} delay={index * 0.08}>
@@ -120,6 +117,9 @@ export function Projects() {
             </article>
           </Reveal>
         ))}
+      </div>
+      <div className="scroll-hint" aria-hidden="true">
+        <span>← Swipe to explore →</span>
       </div>
       {selectedProject && (
         <Suspense
