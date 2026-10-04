@@ -134,7 +134,6 @@ export const portfolio = {
       id: 'platforms',
       title: 'Cloud, networking & tools',
       items: [
-        { name: 'SAP CAP', mark: 'SAP', icon: 'sap' },
         { name: 'AWS', mark: 'aws', icon: 'aws' },
         { name: 'Google Cloud', mark: 'GCP', icon: 'googlecloud' },
         { name: 'Docker', mark: 'D', icon: 'docker' },
