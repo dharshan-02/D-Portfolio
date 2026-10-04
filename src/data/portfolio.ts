@@ -88,7 +88,7 @@ export const portfolio = {
   },
   contactIntro: {
     detail:
-      'Ambitious concepts deserve a proper blueprint. Drop me an email—let’s architect something exceptional.',
+      'Massive ideas deserve a proper blueprint, not just a quick DM. Send me an email and let’s architect the impossible together.',
   },
   footerStatement: 'Developer · Tester · Freelancer',
   email: 'dharshanbalas02@gmail.com',

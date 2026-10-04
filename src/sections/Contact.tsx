@@ -38,7 +38,7 @@ export function Contact() {
           <div className="contact-invite__content">
             <div>
               <span className="contact-invite__eyebrow">
-                A good conversation can start anywhere
+                Great ideas don't belong in short messages
               </span>
               <h3>{portfolio.sections.contact.invitation}</h3>
             </div>

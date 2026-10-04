@@ -52,16 +52,13 @@ export function JavaLoader() {
               <b>02</b>   <i>public static void</i> main(String[] args) {'{'}
             </span>
             <span>
-              <b>03</b>     <i>boolean</i> isPortfolioLoading = <i>true</i>;
+              <b>03</b>     System.out.println(<em>"13JU06!"</em>);
             </span>
             <span>
-              <b>04</b>     System.out.println(isPortfolioLoading ? <em>"YES"</em> : <em>"NO"</em>);
+              <b>04</b>   {'}'}
             </span>
             <span>
-              <b>05</b>   {'}'}
-            </span>
-            <span>
-              <b>06</b> {'}'}
+              <b>05</b> {'}'}
             </span>
           </pre>
         </div>
