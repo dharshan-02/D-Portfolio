@@ -13,8 +13,8 @@ export function SectionHeading({ eyebrow, title, note, titleId }: SectionHeading
       <p className="eyebrow">{eyebrow}</p>
       <div className="section-heading__main">
         <h2 id={titleId}>{title}</h2>
-        {note && <p className="section-heading__note">{note}</p>}
       </div>
+      {note && <p className="section-heading__note">{note}</p>}
     </Reveal>
   );
 }

@@ -26,6 +26,10 @@ export function Certifications() {
         note={portfolio.sections.certifications.note}
         titleId="certifications-title"
       />
+      
+      <div className="scroll-hint" aria-hidden="true">
+        <span>← Swipe to explore →</span>
+      </div>
 
       <div className="cert-grid" {...dragProps}>
         {portfolio.certifications.map((cert, index) => {
@@ -78,9 +82,6 @@ export function Certifications() {
             </Reveal>
           );
         })}
-      </div>
-      <div className="scroll-hint" aria-hidden="true">
-        <span>← Swipe to explore →</span>
       </div>
     </section>
   );
