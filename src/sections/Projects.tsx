@@ -118,6 +118,9 @@ export function Projects() {
           </Reveal>
         ))}
       </div>
+      <div className="scroll-hint" aria-hidden="true">
+        <span>← Swipe to explore →</span>
+      </div>
       {selectedProject && (
         <Suspense
           fallback={

@@ -79,6 +79,9 @@ export function Certifications() {
           );
         })}
       </div>
+      <div className="scroll-hint" aria-hidden="true">
+        <span>← Swipe to explore →</span>
+      </div>
     </section>
   );
 }

@@ -2056,6 +2056,30 @@ textarea:focus-visible {
   color: var(--accent);
 }
 
+.scroll-hint {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8px;
+  animation: pulse-hint 2.5s infinite ease-in-out;
+}
+
+.scroll-hint span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  padding: 6px 18px;
+  border-radius: 30px;
+}
+
+@keyframes pulse-hint {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
 @media (min-width: 1600px) {
   .hero__name {
     font-size: clamp(96px, 7vw, 124px);
@@ -2230,6 +2254,10 @@ textarea:focus-visible {
 
   .skill-item__name {
     font-size: 11px;
+  }
+
+  .scroll-hint {
+    display: flex;
   }
 
   .projects-grid {
