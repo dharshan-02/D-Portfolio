@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b0e0d"/>
+  <circle cx="978" cy="108" r="205" fill="#c5f36c" opacity=".08"/>
+  <path d="M82 92h88" stroke="#c5f36c" stroke-width="5"/>
+  <text x="82" y="148" fill="#b6b8af" font-family="monospace" font-size="22" letter-spacing="5">ENGINEERING / PORTFOLIO</text>
+  <text x="78" y="325" fill="#f4f3ed" font-family="Arial,sans-serif" font-size="106" font-weight="700">Dharshan B</text>
+  <text x="84" y="405" fill="#c5f36c" font-family="Arial,sans-serif" font-size="39">Thoughtful software, built end to end.</text>
+  <text x="84" y="535" fill="#b6b8af" font-family="monospace" font-size="20">FULL-STACK · AI CURIOUS · CLOUD + NETWORKING</text>
+</svg>
